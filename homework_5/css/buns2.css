@@ -1,4 +1,4 @@
-navigation.layout-grid {
+.layout-grid {
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr;
