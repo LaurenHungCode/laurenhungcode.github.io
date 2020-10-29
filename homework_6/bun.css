@@ -448,3 +448,16 @@ ul, ol {
 .div-block-9 {
   background-color: #fff7eb;
 }
+
+#cartContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#cartCount {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

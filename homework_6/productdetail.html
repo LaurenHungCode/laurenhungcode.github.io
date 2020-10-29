@@ -4,13 +4,24 @@
   <meta charset="utf-8">
   <title>ProductDetail</title>
   <link href="bun.css" rel="stylesheet" type="text/css">
-
+  <script type="text/javascript" src="main.js"></script>
 </head>
-<body class="body">
+<body class="body" onunload="goToCheckoutPage()">
   <!-- top menu -->
   <div>
-    <div class="container"><a href="index.html"><img src="images/logo.png" alt="" class="image"></a>
-      <nav role="navigation" class="nav-menu"><a href="buns.html" class="nav-link">BUNS</a><a href="#" class="nav-link">DELIVERY</a><a href="#" class="nav-link">LOCATIONS</a><a href="#" class="nav-link">ABOUT</a><a href="#" class="nav-link"></a><a href="#" class="nav-link"></a></nav>
+    <div class="container">
+      <a href="index.html"><img src="images/logo.png" alt="" class="image"></a>
+      <nav role="navigation" class="nav-menu">
+        <a href="buns.html" class="nav-link">BUNS</a>
+        <a href="#" class="nav-link">DELIVERY</a>
+        <a href="#" class="nav-link">LOCATIONS</a>
+        <a href="#" class="nav-link">ABOUT</a>
+        <a href="#" class="nav-link"></a>
+        <a href="#" class="nav-link"></a></nav>
+        <div id="cartContainer">
+          <img src="images/cart.png" alt="">
+          <div id="cartCount">0</div>
+        </div>
     </div>
   </div>
   <!-- product detail -->
@@ -24,15 +35,36 @@
         <h1 class="heading-3">BUN BUN’S CLASSIC ORIGINAL BUN</h1>
         <div class="text-block-4">$ 04.25</div>
         <div class="div-block-4">
+          
+          <!-- Attribute 1, the quantity of buns -->
           <div class="text-block-5">QUANTITY</div>
           <div>
-            <form id="form" name="form" data-name="Form"><select id="field" name="field" class="select"><option value="">Select quantity</option><option value="First">1</option><option value="Second">3</option><option value="Third">6</option><option value="Fourth">12</option></select></form>
+            <input type="number" id="quant"/>
+            <!--
+            <form id="form" name="form" data-name="Form">
+              <select id="field" name="field" class="select">
+                <option value="">Select quantity</option>
+                <option value="First">1</option>
+                <option value="Second">3</option>
+                <option value="Third">6</option>
+                <option value="Fourth">12</option>
+              </select>
+            </form>
+            -->
           </div>
         </div>
         <div class="div-block-4">
+
+        <!-- Attribute 2, the flavor of glaze -->
           <div class="text-block-5">GLAZE</div>
           <div>
-            <form id="form" name="form" data-name="Form"><select id="field-2" name="field-2" class="select"><option value="">Select flavor</option><option value="First">None</option><option value="Second">Sugar-milk</option><option value="Third">Vanilla-milk</option><option value="Fourth">Double-chocolate</option></select></form>
+              <select id="form">
+                <option value="">Select flavor</option>
+                <option value="None">None</option>
+                <option value="Sugar-milk">Sugar-milk</option>
+                <option value="Vanilla-milk">Vanilla-milk</option>
+                <option value="Double-chocolate">Double-chocolate</option>
+              </select>
           </div>
         </div>
         <div class="div-block-7"><img src="images/shipping.png" alt="">
@@ -41,7 +73,11 @@
         <div class="div-block-7"><img src="images/store.png" alt="">
           <div class="text-block-6">Live near a store? Select in-store pick up in checkout</div>
         </div>
-        <div><a href="#" class="button-2 button">ADD TO CART</a></div>
+        <div>
+           <!-- Add to cart button -->
+          <input type="button" class="button-2 button" id="addToCartButton" value="Add to cart" onclick="addToCart()">
+          <!-- <a href="#" class="button-2 button">ADD TO CART</a>-->
+        </div>
       </div>
     </div>
     <div class="div-block-6"><img src="images/star1.png" alt="">
