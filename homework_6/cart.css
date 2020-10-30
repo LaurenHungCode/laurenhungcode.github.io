@@ -2,6 +2,35 @@
     margin: 80px;
 }
 
+#cart-margin2{
+    margin-top: 30px;
+}
+
+#item-1{
+    background:#fff7eb;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+#delivery-margin{
+    margin: 30px;
+
+
+}
+
+#shipping-div{
+    width: 400px;
+    height: 100px;
+    padding: 20px;
+    background:white;
+    border-style: solid;
+    border-color: #ddb2ff;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
 .return {
     display: flex;
     justify-content: flex-start;
@@ -9,9 +38,41 @@
     text-decoration: none;
     font-family: 'Varela Round', sans-serif;
     color:#333 ;
-    padding-left: 20px;
   }
 
+.return2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    color:#333 ;
+    padding-left: 20px;
+  }  
 a:link {
     text-decoration: none;
+}
+
+.inside-item-1 {
+    text-align: left;
+}
+
+.cart-items {
+    width: 600px;
+    float: left;
+
+}
+.delivery {
+    float: right;
+    margin-top: 85px;
+    width: 500px;
+    height: 600px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    background:white;
+
+}
+
+.text-margin{
+    margin-bottom: 30px;
 }
