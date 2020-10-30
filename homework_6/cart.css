@@ -11,6 +11,7 @@
     border-radius: 10px;
     display: flex;
     justify-content: flex-start;
+    padding: 20px;
     
 }
 
@@ -41,6 +42,10 @@
     border-radius: 10px;
     border-width: 2px;
 
+}
+
+#image-margin{
+    margin-right: 20px;
 }
 
 .span {
@@ -79,8 +84,8 @@ a:link {
 .cart-items {
     width: 600px;
     float: left;
-
 }
+
 .delivery {
     float: right;
     margin-top: 85px;
@@ -89,13 +94,37 @@ a:link {
     padding: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
     background:white;
-
 }
 
 .text-margin{
     margin-bottom: 30px;
 }
 
+.text-margin2{
+    margin-bottom: 10px;
+}
+
 .icon-margin{
     margin-left: 10px;
 }
+
+.right{
+    padding-left: 60px;
+    text-align: right;
+}
+
+.right2{
+    text-align: left;
+    margin-left: 15px;
+    text-align: left;
+
+}
+
+.form-align{
+    float: right;
+}
+
+.form-align2{
+    float: left;
+}
+

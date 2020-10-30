@@ -44,12 +44,21 @@
         <div> 
             <!-- ITEM1 -->
             <div id="item-1">
-                <img src="images/cart-bun.png" alt="">
+                <img id="image-margin" src="images/cart-bun.png" alt="">
 
                 <div class="inside-item-1">
-                    <div>BUN BUN’S CLASSIC ORIGINAL BUN</div>
-                    <div><input type="number" id="quant"/></div>
+                    
+                    <div class="span">
+                        <span>BUN BUN’S CLASSIC ORIGINAL BUN</span> 
+                        <span class="right">
+                        <button type="remove" value="Remove">REMOVE</button></span>
+                    </div>
+                    
+                    <div class="text-margin2"></div>
+                    
                     <div> 
+                        <input type="number" id="quant"/>
+                        <div class="text-margin2"></div>
                         <select id="form">
                             <option value="">Select flavor</option>
                             <option value="None">None</option>
@@ -57,13 +66,13 @@
                             <option value="Vanilla-milk">Vanilla-milk</option>
                             <option value="Double-chocolate">Double-chocolate</option>
                         </select>
+
+                        <div class="text-margin2"></div>
+                        
+                        <div class="right">$12.75</div>
                     </div>
                 </div>
 
-                <div>
-                    <button type="remove" value="Remove">REMOVE</button> 
-                    <div>$12.75</div>
-                </div>
             </div>
         </div>
     </div>
@@ -75,13 +84,24 @@
 
             <div id="shipping-div">
                 <input type="radio" id="shipping" name="shipping" value="shipping">
+                
                 <img class="icon-margin" src="images/shipping.png" alt="">
-                <div>Get shipped to your home as soon as Thursday, October 1st</div>
+                
+                <span class="right2">Buns will arrive as soon as October 31st</span>
+                
                 <div>
-                    <form action="">
+                    <form class="form-align" action="">
                       <label for="zip">ZIP CODE</label>
+                      <div class="text-margin2"></div>
                       <input type="number" id="zip" name="zipcode" placeholder="your zip code">
+                    </form>
+
+                    <div class="text-margin2"></div>
+                    <div class="text-margin2"></div>
+
+                    <form class="form-align2" action="">
                       <label for="deliverydate">DELIVERY DATE</label>
+                      <div class="text-margin2"></div>
                       <input type="date" id="deliverydate" name="deliverydate" placeholder="11/25/2020">
                     </form>
                 </div>
