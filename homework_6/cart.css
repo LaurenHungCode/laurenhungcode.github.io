@@ -16,8 +16,6 @@
 
 #delivery-margin{
     margin: 30px;
-
-
 }
 
 #shipping-div{
@@ -29,7 +27,28 @@
     border-color: #ddb2ff;
     border-radius: 10px;
     border-width: 2px;
+
 }
+
+#pickup-div{
+    width: 400px;
+    height: 40px;
+    padding: 20px;
+    margin-top: 30px;
+    background:white;
+    border-style: solid;
+    border-color: #dadada;
+    border-radius: 10px;
+    border-width: 2px;
+
+}
+
+.span {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
 
 .return {
     display: flex;
@@ -75,4 +94,8 @@ a:link {
 
 .text-margin{
     margin-bottom: 30px;
+}
+
+.icon-margin{
+    margin-left: 10px;
 }

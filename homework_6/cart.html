@@ -72,21 +72,35 @@
     <div class="delivery">
         <div id="delivery-margin">
             <div class="text-margin">SELECT DELIVERY OR PICKUP</div>
+
             <div id="shipping-div">
                 <input type="radio" id="shipping" name="shipping" value="shipping">
-                <img src="images/shipping.png" alt="">
+                <img class="icon-margin" src="images/shipping.png" alt="">
                 <div>Get shipped to your home as soon as Thursday, October 1st</div>
                 <div>
                     <form action="">
                       <label for="zip">ZIP CODE</label>
                       <input type="number" id="zip" name="zipcode" placeholder="your zip code">
-                  
                       <label for="deliverydate">DELIVERY DATE</label>
                       <input type="date" id="deliverydate" name="deliverydate" placeholder="11/25/2020">
                     </form>
                 </div>
-                  
+            </div>
 
+            <div id="pickup-div">
+                <input type="radio" id="shipping" name="shipping" value="shipping">
+                <img class="icon-margin" src="images/store-grey.png" alt="">
+            </div>
+
+            <div class="span">
+                <span>SHIPPING + HANDLING</span><span>$10</span>
+            </div>
+            <div class="span">
+                <span>SUBTOTAL</span><span>$22.75</span>
+            </div>
+            
+            <div class="span">
+                <input type="button" class="button-2 button" id="checkoutButton" value="CHECKOUT" onclick="checkout()">
             </div>
 
         </div>
