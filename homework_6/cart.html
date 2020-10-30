@@ -5,14 +5,14 @@
   <title>Bun Bun's Cart</title>
   <link href="bun.css" rel="stylesheet" type="text/css">
   <link href="cart.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript" src="main.js"></script>
+  <script src="main.js"></script>
 </head>
 <body class="body" onunload="goToCheckoutPage()">
   <!-- TOP MENU -->
   <div>
     <div class="container">
       <a href="index.html"><img src="images/logo.png" alt="" class="image"></a>
-      <nav role="navigation" class="nav-menu">
+      <nav class="nav-menu">
         <a href="buns.html" class="nav-link">BUNS</a>
         <a href="#" class="nav-link">DELIVERY</a>
         <a href="#" class="nav-link">LOCATIONS</a>
@@ -51,7 +51,7 @@
                     <div class="span">
                         <span>BUN BUN’S CLASSIC ORIGINAL BUN</span> 
                         <span class="right">
-                        <button type="remove" value="Remove">REMOVE</button></span>
+                        <button type="button" value="Remove">REMOVE</button></span>
                     </div>
                     
                     <div class="text-margin2"></div>
@@ -83,14 +83,14 @@
             <div class="text-margin">SELECT DELIVERY OR PICKUP</div>
 
             <div id="shipping-div">
-                <input type="radio" id="shipping" name="shipping" value="shipping">
+                <input type="radio" name="shipping" value="shipping">
                 
                 <img class="icon-margin" src="images/shipping.png" alt="">
                 
                 <span class="right2">Buns will arrive as soon as October 31st</span>
                 
                 <div>
-                    <form class="form-align" action="">
+                    <form class="form-align" action="/action_page.php">
                       <label for="zip">ZIP CODE</label>
                       <div class="text-margin2"></div>
                       <input type="number" id="zip" name="zipcode" placeholder="your zip code">
@@ -99,16 +99,16 @@
                     <div class="text-margin2"></div>
                     <div class="text-margin2"></div>
 
-                    <form class="form-align2" action="">
+                    <form class="form-align2" action="/action_page.php">
                       <label for="deliverydate">DELIVERY DATE</label>
                       <div class="text-margin2"></div>
-                      <input type="date" id="deliverydate" name="deliverydate" placeholder="11/25/2020">
+                      <input type="date" id="deliverydate" name="deliverydate" placeholder="number">
                     </form>
                 </div>
             </div>
 
             <div id="pickup-div">
-                <input type="radio" id="shipping" name="shipping" value="shipping">
+                <input type="radio" name="shipping" value="shipping">
                 <img class="icon-margin" src="images/store-grey.png" alt="">
             </div>
 
