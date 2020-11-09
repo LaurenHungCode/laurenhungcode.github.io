@@ -19,7 +19,7 @@
         <a href="#" class="nav-link"></a>
         <a href="#" class="nav-link"></a></nav>
         <div id="cartContainer">
-          <a href="cart.html">
+          <a href="cart2.html" onclick="sendToCart()">
           <img src="images/cart.png" alt=""></a>
           <div id="cartCount">0</div>
         </div>
@@ -30,10 +30,10 @@
     <div class="div-block-3">
 
       <!-- Gallery pictures -->
-      <div class="layout-grid grid-5"><img src="images/22.png" onclick="currentSlide(1)" alt=""><img src="images/23.png" alt=""></div>
+      <div class="layout-grid grid-5"><img src="images/22.png" alt=""><img src="images/23.png" alt=""></div>
 
       <!-- Main picture -->
-      <div><img src="images/21.png" onclick="currentSlide(2)" alt="" class="image-11">
+      <div><img src="images/21.png" alt="" class="image-11">
         <div class="text-block-3">You can’t go wrong with Bun Bun’s classic original. Family secret recipe developed by master baker Mrs. Bun’s grandmother in 1923. This timeless bun as been loved by many generations of bun connoisseurs.</div>
       </div>
       
@@ -45,20 +45,11 @@
           
           <!-- Attribute 1, the quantity of buns -->
           <div class="text-block-5">QUANTITY</div>
+
           <div>
-            <input type="number" id="quant"/>
-            <!--
-            <form id="form" name="form" data-name="Form">
-              <select id="field" name="field" class="select">
-                <option value="">Select quantity</option>
-                <option value="First">1</option>
-                <option value="Second">3</option>
-                <option value="Third">6</option>
-                <option value="Fourth">12</option>
-              </select>
-            </form>
-            -->
+            <input oninput="price()" type="number" id="quant"/>
           </div>
+
         </div>
         <div class="div-block-4">
 

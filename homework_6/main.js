@@ -5,9 +5,12 @@ var productArr = []
 class Product {
 	constructor(quant, glaze) {
 		this.quant = quant
-		this.glaze = glaze
+    this.glaze = glaze
+    this.total = total
 	}
 }
+
+let total=0
 
 function addToCart() {
 	//alert('add to cart')
@@ -15,17 +18,18 @@ function addToCart() {
     // glaze
     var glaze = document.getElementById('form').value
 
-    // guant
+    // quant
     var quant = document.getElementById('quant').value
 
 	var quantCount = parseInt(quant)
-	for(var i = 0; i < quantCount; i++) {
-		var bun = new Product(quant, glaze)
+	//for(var i = 0; i < quantCount; i++) {
+		var bun = new Product(quant, glaze,total)
 		productArr.push(bun)	
-    }
+  //  }
     console.log(productArr)
 	
-	updateCartNumber(productArr.length)
+  //updateCartNumber(productArr.length)
+  updateCartNumber(quant)
 }
 
 function updateCartNumber(num) {
@@ -33,33 +37,15 @@ function updateCartNumber(num) {
 	cartCount.innerHTML = num
 }
 
-
-// test image update
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function sendToCart(){
+    alert('you clicked send to cart');  
+    localStorage.setItem('userOrder', JSON.stringify(productArr))
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+//quantity times $ 04.25 = total price
+function price(){
+  var quant = document.getElementById('quant').value
+  total = quant*4.25
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  console.log(total)
 }
