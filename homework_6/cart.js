@@ -3,7 +3,7 @@ function cartLoad() {
     productArrParse = JSON.parse(loadedProductArr);    
 
     //birngs back prodArr that we saved from Product Page 		
-    console.log('we are on checkout page');	
+    console.log('we are on cart page');	
     console.log(productArrParse);
     var cartContainer = document.getElementById('productwrapper');
 
@@ -20,7 +20,7 @@ function cartLoad() {
 }
 
 function deleteProduct(i) {	
-    //alert('i : ' + i)	
+    //alert()	
     console.log('before we delete')	
     console.log(productArrParse)
     

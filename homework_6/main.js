@@ -3,7 +3,7 @@ var productArr = []
 
 //This is going to be a product class for buns you can purchase
 class Product {
-	constructor(quant, glaze) {
+	constructor(quant, glaze, total) {
 		this.quant = quant
     this.glaze = glaze
     this.total = total
