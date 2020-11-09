@@ -38,7 +38,7 @@ function updateCartNumber(num) {
 }
 
 function sendToCart(){
-    alert('you clicked send to cart');  
+    //alert('you clicked send to cart');  
     localStorage.setItem('userOrder', JSON.stringify(productArr))
 }
 
