@@ -33,13 +33,19 @@ function addToCart() {
 }
 
 function updateCartNumber(num) {
-	var cartCount = document.getElementById('cartCount')
-	cartCount.innerHTML = num
+	  var cartCount = document.getElementById('cartCount');
+  cartCount.innerHTML = num;
+
+  if (num == undefined) {
+    cartCount.style.display="none"
+  }
+
+  
 }
 
 function sendToCart(){
     //alert('you clicked send to cart');  
-    localStorage.setItem('userOrder', JSON.stringify(productArr))
+    localStorage.setItem('userOrder', JSON.stringify(productArr));
 }
 
 //quantity times $ 04.25 = total price
