@@ -1,0 +1,413 @@
+
+/* responsive */
+
+.example {
+  padding: 20px;
+  color: white;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* testing */
+  .example {background: red;}
+  /* home */
+  #hi{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    color: #000000;
+  }
+  #intro{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;
+    line-height: 180%;
+
+  }
+  #project-duration{
+    display: none;
+  }
+  #project-title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+  }
+  #project-description{
+    display: none;
+  }
+  .footer{
+    display: inline;
+    font-size: 12px;
+    font-weight: 300;
+    color: #707070;
+  }
+  /* portfolio */
+  .header{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #000000;
+  }
+  .content{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 180%;
+    color: #000000;
+  }
+  #insights{
+    padding-left: 80px;
+  }
+/* sidenav */
+.sidenav {
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 80px;
+  left: 0px;
+  background: rgba(239, 242, 248, 0.8) ;
+  overflow-x: hidden;
+  padding: 20px;
+  border-radius: 0px 20px 20px 0px;
+}
+#title{
+  padding: 10px 8px 0px 16px;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 14px;
+  font-weight: 400;
+  color: #8F8F8F;
+  display: block;
+}
+.sidenav a:hover {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+}
+/* about me */
+.about-headline{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  color: #000000;
+}
+.about-tagline{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  color: #80BDF4;
+}
+.bio{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 180%;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* testing */
+  .example {background: green;}
+  /* home */
+  #hi{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 80px;
+    font-weight: 800;
+    color: #000000;
+  }
+  #intro{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #000000;
+    line-height: 180%;
+ 
+  }
+  #project-duration{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #7B7B7B;
+  }
+  #project-title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+  }
+  #project-description{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;
+    line-height: 180%;
+  }
+  .footer{
+    display: inline;
+    font-size: 14px;
+    font-weight: 300;
+    color: #707070;
+  }
+  /* portfolio */
+  .header{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+  }
+  .content{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 180%;
+    color: #000000;
+  }
+  #insights{
+    padding-left: 80px;
+  }
+/* sidenav */
+.sidenav {
+  width: 228px;
+  position: fixed;
+  z-index: 1;
+  top: 80px;
+  left: 0px;
+  background: rgba(239, 242, 248, 0.6) ;
+  overflow-x: hidden;
+  padding: 20px;
+  border-radius: 0px 20px 20px 0px;
+}
+#title{
+  padding: 10px 8px 0px 16px;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 14px;
+  font-weight: 400;
+  color: #8F8F8F;
+  display: block;
+}
+.sidenav a:hover {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+}
+/* about me */
+.about-headline{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  color: #000000;
+}
+.about-tagline{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #80BDF4;
+}
+.bio{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 180%;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* testing */
+  .example {background: pink;}
+  /* home */
+  #hi{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 112px;
+    font-weight: 800;
+    color: #000000;
+  }
+  #intro{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    color: #000000;
+    line-height: 180%;
+  }
+  #project-duration{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #7B7B7B;
+  }
+  #project-title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #000000;
+  }
+  #project-description{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000;
+    line-height: 180%;
+  }
+  .footer{
+    display: inline;
+    font-size: 14px;
+    font-weight: 300;
+    color: #707070;
+  }
+  /* portfolio */
+  .header{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #000000;
+  }
+  .content{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 180%;
+    color: #000000;
+  }
+  #insights{
+    padding-left: 80px;
+  }
+/* sidenav */
+.sidenav {
+  width: 228px;
+  position: fixed;
+  z-index: 1;
+  top: 80px;
+  left: 0px;
+  background: rgba(239, 242, 248, 0.6) ;
+  overflow-x: hidden;
+  padding: 20px;
+  border-radius: 0px 20px 20px 0px;
+}
+#title{
+  padding: 10px 8px 0px 16px;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 18px;
+  font-weight: 400;
+  color: #8F8F8F;
+  display: block;
+}
+.sidenav a:hover {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+}
+/* about me */
+.about-headline{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 80px;
+  font-weight: 800;
+  color: #000000;
+}
+.about-tagline{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  color: #80BDF4;
+}
+.bio{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 180%;
+}
+
+}
+
+
+/* universal */
+.Previous{
+  float: left;
+}
+.Next{
+  float: right;
+}
+.top-spacing{
+  padding-top: 100px;
+}
+.top-spacing-2{
+  padding-top: 20px;
+}
+.video{
+  padding: 20px;
+}
+.uk-block{
+  margin-bottom: 60px;
+}
+#project-image{
+  float: right;
+}
+#thanks{
+  float: right;
+}
+#fixed-button{
+  position: fixed;
+  bottom: 50px;
+  right: 50px; 
+}
+.uk-block {
+  background-color: rgb(255, 255, 255, 0) !important;
+  border-radius: 12px;
+}
+body {
+  font-family: 'Open Sans', sans-serif !important;
+}
+.uk-navbar-container {
+  background-color: rgb(255, 255, 255, 0.6) !important;
+  font-family: 'Open Sans', sans-serif !important;
+}
+.uk-navbar-container a {
+  font-family: 'Open Sans', sans-serif !important;
+  text-transform: capitalize !important;
+  color: black !important;
+}
+.uk-navbar-container a:hover {
+  font-family: 'Open Sans', sans-serif !important;
+  text-transform: capitalize !important;
+  color: #80BDF4 !important;
+}
+.uk-active{
+  font-family: 'Open Sans', sans-serif !important;
+  text-transform: capitalize !important;
+  color: #80BDF4 !important;
+  font-weight: 800 !important;
+}
+.uk-button{
+  border-radius: 8px !important;
+  border: 1px solid #000000 !important;
+}
+
+.uk-button:hover {
+  border-radius: 8px !important;
+  border: 1px solid #80BDF4 !important;
+}
+
